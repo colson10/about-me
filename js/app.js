@@ -15,3 +15,16 @@ if (carlAge === 'Y' || carlAge === 'YES') {
 } else {
     alert('Please enter "Yes" or "No"!');
 }
+
+var carlHome = prompt('Do you think I\'m originally from Seattle?').toUpperCase();
+console.log('The user entered: ' + carlHome);
+
+if (carlHome === 'Y' || carlHome === 'YES') {
+    alert('You are correct, I grew up here in Seattle!');
+    console.log('The user answered correctly');
+} else if (carlHome === 'N' || carlHome === 'NO') {
+    alert('Incorrect, I am proud to say I grew up here in Seattle');
+    console.log('The user answered incorrectly');
+} else {
+    alert('Please enter "Yes" or "No"!');
+}
