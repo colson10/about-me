@@ -3,7 +3,7 @@
 var userName = prompt('Hi! I have a guessing game with questions about me. But first, what is your name?');
 console.log('For name, the user entered: ' + userName);
 
-var carlAge = prompt('Hi ' + userName + ', nice to meet you! For the following questions please answer "Yes" or "No" ("y" or "n" are OK too).\n\nMy first question for you is: do you think I\'m over 30 years old?').toUpperCase();
+var carlAge = prompt('Hi, ' + userName + ', nice to meet you! For the following questions please answer "Yes" or "No" ("y" or "n" are OK too).\n\nMy first question for you is: do you think I\'m over 30 years old?').toUpperCase();
 console.log('The user entered: ' + carlAge);
 
 if (carlAge === 'Y' || carlAge === 'YES') {
@@ -14,6 +14,7 @@ if (carlAge === 'Y' || carlAge === 'YES') {
     console.log('The user answered incorrectly');
 } else {
     alert('Please enter "Yes" or "No"!');
+    console.log('The user entered something other than yes or no.');
 }
 
 var carlHome = prompt('Do you think I\'m originally from Seattle?').toUpperCase();
@@ -27,6 +28,7 @@ if (carlHome === 'Y' || carlHome === 'YES') {
     console.log('The user answered incorrectly');
 } else {
     alert('Please enter "Yes" or "No"!');
+    console.log('The user entered something other than yes or no.');
 }
 
 var carlPets = prompt('How many pets do you think I have? More than 2?').toUpperCase();
@@ -40,6 +42,7 @@ if (carlPets === 'Y' || carlPets === 'YES') {
     console.log('The user answered correctly');
 } else {
     alert('Please enter "Yes" or "No"!');
+    console.log('The user entered something other than yes or no.');
 }
 
 var carlKids = prompt('What about kids - do you think I have any kids?').toUpperCase();
@@ -53,4 +56,21 @@ if (carlKids === 'Y' || carlKids === 'YES') {
     console.log('The user answered incorrectly');
 } else {
     alert('Please enter "Yes" or "No"!');
+    console.log('The user entered something other than yes or no.');
 }
+
+var carlInstrument = prompt('OK, last one...what if I told you I play the cello? Would you believe me?').toUpperCase();
+console.log('The user entered: ' + carlInstrument);
+
+if (carlInstrument === 'Y' || carlInstrument === 'YES') {
+    alert('Incorrect, I have never played the cello, but I do play the guitar.');
+    console.log('The user answered incorrectly');
+} else if (carlInstrument === 'N' || carlInstrument === 'NO') {
+    alert('You are correct, I do not play the cello, but I do play the guitar!');
+    console.log('The user answered correctly');
+} else {
+    alert('Please enter "Yes" or "No"!');
+    console.log('The user entered something other than yes or no.');
+}
+
+alert(userName + ', thanks for answering these questions. I hope you enjoyed learning a little more about me!')
