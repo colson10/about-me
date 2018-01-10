@@ -31,14 +31,14 @@ if (carlHome === 'Y' || carlHome === 'YES') {
     console.log('The user entered something other than yes or no.');
 }
 
-var carlPets = prompt('How many pets do you think I have? More than 2?').toUpperCase();
-console.log('The user entered: ' + carlPets);
+var carlSiblings = prompt('How many siblings do you think I have? More than 2?').toUpperCase();
+console.log('The user entered: ' + carlSiblings);
 
-if (carlPets === 'Y' || carlPets === 'YES') {
-    alert('Incorrect, I have zero pets :( \n\nOn to the next question!');
+if (carlSiblings === 'Y' || carlSiblings === 'YES') {
+    alert('Incorrect, I have one older brother who also lives in Seattle.\n\nOn to the next question!');
     console.log('The user answered incorrectly');
-} else if (carlPets === 'N' || carlPets === 'NO') {
-    alert('Correct, I don\'t have any pets :( \n\nOn to the next question...');
+} else if (carlSiblings === 'N' || carlSiblings === 'NO') {
+    alert('Correct, I do not have more than 2 siblings, but I do have an older brother who also lives in Seattle.\n\nOn to the next question...');
     console.log('The user answered correctly');
 } else {
     alert('Please enter "Yes" or "No"!');
