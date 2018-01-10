@@ -1,17 +1,19 @@
 html {
-    background-color: azure;
+  background-color: azure;
 }
+
 body {
-    margin-top: 20px;
+  margin-top: 20px;
 }
+
 h1 {
-    font-size: 40px;
-    text-align: center;
-    color: gray;
+  font-size: 40px;
+  text-align: center;
+  color: gray;
 }
 
 p {
-    font-size: 16px;
-    text-align: center;
-    color: #555454;
+  font-size: 16px;
+  text-align: center;
+  color: #555454;
 }
