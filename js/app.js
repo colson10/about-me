@@ -90,9 +90,35 @@ for (var i = 1; i <= 4; i++) {
     break;
   } else if (numGuess < 14) {
     alert('Too low...I\'m older than that. Guess again!');
+    console.log('The user answered incorrectly');
   } else if (numGuess > 14) {
     alert('Too high...I\'m younger than that! Guess again!');
+    console.log('The user answered incorrectly');
   }
 }
 
-alert(userName + ', thanks for answering these questions. You got ' + totalCorrect + ' out of 6 questions correct. I hope you enjoyed learning a little more about me!');
+var countriesEurope = ['France', 'Spain', 'Germany', 'Austria', 'Italy', 'Denmark', 'Slovenia',];
+var counter = 1;
+
+while (counter <= 6) {
+  var countriesQuestion = prompt('Can you guess a country that I\'ve been to in Europe?').toLowerCase();
+  console.log('The user entered: ' + countriesQuestion);
+  for (var x = 0; x < countriesEurope.length; x++) {
+    if (countriesQuestion === countriesEurope[x].toLowerCase()) {
+      alert('Correct! The countries in Europe that I have visited are: ' + countriesEurope.join(', '));
+      console.log('The user entered a correct answer');
+      totalCorrect++;
+      counter = 7;
+      break;
+    }
+  }
+  if (counter <= 6) {
+    alert('Incorrect, try again!');
+    console.log('The user entered an incorrect answer.');
+  } else if (counter > 6) {
+    break;
+  }
+  counter++;
+}
+
+alert(userName + ', thanks for answering these questions. You got ' + totalCorrect + ' out of 7 questions correct. I hope you enjoyed learning a little more about me!');
