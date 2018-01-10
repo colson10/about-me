@@ -3,7 +3,7 @@
 var userName = prompt('Hi! I have a guessing game with questions about me. But first, what is your name?');
 console.log('For name, the user entered: ' + userName);
 
-var totalCorrect = 0
+var totalCorrect = 0;
 
 var carlAge = prompt('Hi, ' + userName + ', nice to meet you! For the following questions please answer "Yes" or "No" ("y" or "n" are OK too).\n\nMy first question for you is: do you think I\'m over 30 years old?').toUpperCase();
 console.log('The user entered: ' + carlAge);
@@ -80,4 +80,19 @@ if (carlInstrument === 'Y' || carlInstrument === 'YES') {
   console.log('The user entered something other than yes or no.');
 }
 
-alert(userName + ', thanks for answering these questions. You got ' + totalCorrect + ' out of 5 questions correct. I hope you enjoyed learning a little more about me!')
+for (var i = 1; i <= 4; i++) {
+  var numGuess = parseInt(prompt('For this question, you\'re guessing a number. How many years since I graduated college?'));
+  console.log('The user entered: ' + numGuess);
+  if (numGuess === 14) {
+    alert('Correct! I graduated with a Bachelor of Science in Biology from UW in 2004.');
+    console.log('The user answered correctly');
+    totalCorrect++;
+    break;
+  } else if (numGuess < 14) {
+    alert('Too low...I\'m older than that. Guess again!');
+  } else if (numGuess > 14) {
+    alert('Too high...I\'m younger than that! Guess again!');
+  }
+}
+
+alert(userName + ', thanks for answering these questions. You got ' + totalCorrect + ' out of 6 questions correct. I hope you enjoyed learning a little more about me!');
