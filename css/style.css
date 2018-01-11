@@ -37,30 +37,36 @@ p {
   margin: 15px;
 }
 
-#name-line {
-  width: 75px;
+ul {
+  width: 400px;
+  margin: 0 auto;
+}
+
+ul li {
+  text-align: center;
+  line-height: 1.5;
+}
+
+ol {
+  line-height: 1.25;
+  list-style: decimal;
+  padding-left: 70px;
 }
 
 strong {
   font-weight: bold;
 }
 
+.list {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#name-line {
+  width: 75px;
+}
+
 #name-line-top-margin {
   width: 150px;
   margin-top: 25px;
-}
-
-.fav-list {
-  display: inline;
-}
-
-ol {
-  line-height: 1.25em;
-  /* padding-left: 50px; */
-  text-align: center;
-}
-
-.list {
-  width: 200px;
-  margin: 0 auto;
 }
