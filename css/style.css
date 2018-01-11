@@ -1,5 +1,6 @@
 html {
   background-color: azure;
+  color: #555454;
 }
 
 body {
@@ -9,15 +10,57 @@ body {
 h1 {
   font-size: 35px;
   text-align: center;
-  color: gray;
+  margin: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 40px auto 20px;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
+  margin: 15px;
+}
+
+h4 {
+  font-size: 16px;
+  text-align: center;
+  margin: 40px auto 20px;
 }
 
 p {
   font-size: 16px;
   text-align: center;
-  color: #555454;
+  margin: 15px;
 }
 
 #name-line {
   width: 75px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#name-line-top-margin {
+  width: 150px;
+  margin-top: 25px;
+}
+
+.fav-list {
+  display: inline;
+}
+
+ol {
+  line-height: 1.25em;
+  /* padding-left: 50px; */
+  text-align: center;
+}
+
+.list {
+  width: 200px;
+  margin: 0 auto;
 }
