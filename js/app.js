@@ -89,10 +89,10 @@ for (var i = 1; i <= 4; i++) {
     totalCorrect++;
     break;
   } else if (numGuess < 14) {
-    alert('Too low...I\'m older than that. Guess again!');
+    alert('Too low...guess again!');
     console.log('The user answered incorrectly');
   } else if (numGuess > 14) {
-    alert('Too high...I\'m younger than that! Guess again!');
+    alert('Too high...guess again!');
     console.log('The user answered incorrectly');
   }
 }
