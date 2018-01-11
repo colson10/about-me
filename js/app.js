@@ -1,10 +1,19 @@
 'use strict';
 
-var userName = prompt('Hi! I have a guessing game with questions about me. But first, what is your name?');
-console.log('For name, the user entered: ' + userName);
 
+//Global variables
 var totalCorrect = 0;
 
+
+//Introduction
+function introduction(){
+var userName = prompt('Hi! I have a guessing game with questions about me. But first, what is your name?');
+console.log('For name, the user entered: ' + userName);
+}
+
+
+
+//Question 1: Guess my age
 var carlAge = prompt('Hi, ' + userName + ', nice to meet you! For the following questions please answer "Yes" or "No" ("y" or "n" are OK too).\n\nMy first question for you is: do you think I\'m over 30 years old?').toUpperCase();
 console.log('The user entered: ' + carlAge);
 
@@ -20,6 +29,7 @@ if (carlAge === 'Y' || carlAge === 'YES') {
   console.log('The user entered something other than yes or no.');
 }
 
+//Question 2: Asks if originally from Seattle 
 var carlHome = prompt('Do you think I\'m originally from Seattle?').toUpperCase();
 console.log('The user entered: ' + carlHome);
 
@@ -35,6 +45,8 @@ if (carlHome === 'Y' || carlHome === 'YES') {
   console.log('The user entered something other than yes or no.');
 }
 
+
+//Question 3: Guess number of siblings 
 var carlSiblings = prompt('How many siblings do you think I have? More than 2?').toUpperCase();
 console.log('The user entered: ' + carlSiblings);
 
@@ -50,6 +62,8 @@ if (carlSiblings === 'Y' || carlSiblings === 'YES') {
   console.log('The user entered something other than yes or no.');
 }
 
+
+//Question 4: Do I have any ofspring?
 var carlKids = prompt('What about kids - do you think I have any kids?').toUpperCase();
 console.log('The user entered: ' + carlKids);
 
@@ -65,6 +79,8 @@ if (carlKids === 'Y' || carlKids === 'YES') {
   console.log('The user entered something other than yes or no.');
 }
 
+
+////Question 5: Instruments question
 var carlInstrument = prompt('OK, what if I told you I play the cello? Would you believe me?').toUpperCase();
 console.log('The user entered: ' + carlInstrument);
 
@@ -80,6 +96,8 @@ if (carlInstrument === 'Y' || carlInstrument === 'YES') {
   console.log('The user entered something other than yes or no.');
 }
 
+
+//Question 6: How long did I graduate from college
 for (var i = 1; i <= 4; i++) {
   var numGuess = parseInt(prompt('For this question, you\'re guessing a number. How many years since I graduated college?'));
   console.log('The user entered: ' + numGuess);
@@ -96,6 +114,9 @@ for (var i = 1; i <= 4; i++) {
     console.log('The user answered incorrectly');
   }
 }
+
+
+//Question 7: How long did I graduate from college
 
 var countriesEurope = ['France', 'Spain', 'Germany', 'Austria', 'Italy', 'Denmark', 'Slovenia',];
 var counter = 1;
