@@ -48,7 +48,6 @@ function question2() {
 
 question2();
 
-
 //Question 3: Guess number of siblings
 function question3() {
   var carlSiblings = prompt('How many siblings do you think I have? More than 2?').toUpperCase();
@@ -68,7 +67,6 @@ function question3() {
 }
 
 question3();
-
 
 //Question 4: Do I have any offspring?
 function question4() {
@@ -90,7 +88,6 @@ function question4() {
 
 question4();
 
-
 ////Question 5: Instruments question
 function question5() {
   var carlInstrument = prompt('OK, what if I told you I play the cello? Would you believe me?').toUpperCase();
@@ -110,7 +107,6 @@ function question5() {
 }
 
 question5();
-
 
 //Question 6: How long ago did I graduate from college
 function question6() {
