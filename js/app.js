@@ -1,17 +1,12 @@
 'use strict';
 
-
 //Global variables
 var totalCorrect = 0;
-
 
 //Introduction
 
 var userName = prompt('Hi! I have a guessing game with questions about me. But first, what is your name?');
 console.log('For name, the user entered: ' + userName);
-
-
-
 
 //Question 1: Guess my age
 function question1() {
@@ -30,6 +25,7 @@ function question1() {
     console.log('The user entered something other than yes or no.');
   }
 }
+
 question1();
 
 //Question 2: Asks if originally from Seattle
@@ -49,6 +45,7 @@ function question2() {
     console.log('The user entered something other than yes or no.');
   }
 }
+
 question2();
 
 
@@ -69,6 +66,7 @@ function question3() {
     console.log('The user entered something other than yes or no.');
   }
 }
+
 question3();
 
 
@@ -89,6 +87,7 @@ function question4() {
     console.log('The user entered something other than yes or no.');
   }
 }
+
 question4();
 
 
@@ -109,6 +108,7 @@ function question5() {
     console.log('The user entered something other than yes or no.');
   }
 }
+
 question5();
 
 
@@ -131,8 +131,8 @@ function question6() {
     }
   }
 }
-question6();
 
+question6();
 
 //Question 7: How long did I graduate from college
 function question7() {
@@ -160,6 +160,7 @@ function question7() {
     counter++;
   }
 }
+
 question7();
 
 alert(userName + ', thanks for answering these questions. You got ' + totalCorrect + ' out of 7 questions correct. I hope you enjoyed learning a little more about me!');
