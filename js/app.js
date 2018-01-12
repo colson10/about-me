@@ -1,12 +1,16 @@
 'use strict';
 
 //Global variables
-var totalCorrect = 0;
+var totalCorrect = 0; var userName = '';
 
 //Introduction
 
-var userName = prompt('Hi! I have a guessing game with questions about me. But first, what is your name?');
-console.log('For name, the user entered: ' + userName);
+function introduction() {
+  userName = prompt('Hi! I have a guessing game with questions about me. But first, what is your name?');
+  console.log('For name, the user entered: ' + userName);
+}
+
+introduction();
 
 //Question 1: Guess my age
 function question1() {
