@@ -10,8 +10,6 @@ function introduction() {
   console.log('For name, the user entered: ' + userName);
 }
 
-introduction();
-
 //Question 1: Guess my age
 function question1() {
   var carlAge = prompt('Hi, ' + userName + ', nice to meet you! For the following questions please answer "Yes" or "No" ("y" or "n" are OK too).\n\nMy first question for you is: do you think I\'m over 30 years old?').toUpperCase();
@@ -29,8 +27,6 @@ function question1() {
     console.log('The user entered something other than yes or no.');
   }
 }
-
-question1();
 
 //Question 2: Asks if originally from Seattle
 function question2() {
@@ -50,8 +46,6 @@ function question2() {
   }
 }
 
-question2();
-
 //Question 3: Guess number of siblings
 function question3() {
   var carlSiblings = prompt('How many siblings do you think I have? More than 2?').toUpperCase();
@@ -69,8 +63,6 @@ function question3() {
     console.log('The user entered something other than yes or no.');
   }
 }
-
-question3();
 
 //Question 4: Do I have any offspring?
 function question4() {
@@ -90,8 +82,6 @@ function question4() {
   }
 }
 
-question4();
-
 ////Question 5: Instruments question
 function question5() {
   var carlInstrument = prompt('OK, what if I told you I play the cello? Would you believe me?').toUpperCase();
@@ -109,8 +99,6 @@ function question5() {
     console.log('The user entered something other than yes or no.');
   }
 }
-
-question5();
 
 //Question 6: How long ago did I graduate from college
 function question6() {
@@ -131,8 +119,6 @@ function question6() {
     }
   }
 }
-
-question6();
 
 //Question 7: Guess a country in Europe I have visited
 function question7() {
@@ -161,6 +147,13 @@ function question7() {
   }
 }
 
+introduction();
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
 question7();
 
 alert(userName + ', thanks for answering these questions. You got ' + totalCorrect + ' out of 7 questions correct. I hope you enjoyed learning a little more about me!');
