@@ -70,7 +70,7 @@ function question3() {
 question3();
 
 
-//Question 4: Do I have any ofspring?
+//Question 4: Do I have any offspring?
 function question4() {
   var carlKids = prompt('What about kids - do you think I have any kids?').toUpperCase();
   console.log('The user entered: ' + carlKids);
@@ -112,7 +112,7 @@ function question5() {
 question5();
 
 
-//Question 6: How long did I graduate from college
+//Question 6: How long ago did I graduate from college
 function question6() {
   for (var i = 1; i <= 4; i++) {
     var numGuess = parseInt(prompt('For this question, you\'re guessing a number. How many years since I graduated college?'));
@@ -134,7 +134,7 @@ function question6() {
 
 question6();
 
-//Question 7: How long did I graduate from college
+//Question 7: Guess a country in Europe I have visited
 function question7() {
   var countriesEurope = ['France', 'Spain', 'Germany', 'Austria', 'Italy', 'Denmark', 'Slovenia',];
   var counter = 1;
